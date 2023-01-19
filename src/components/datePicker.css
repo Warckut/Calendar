@@ -1,0 +1,108 @@
+.date-picker {
+    width: calc((7*100%)/8);
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.list-days {
+    width: 100%;
+    display: flex;
+}
+
+.list-days li {
+    width: calc((100%)/7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-days li div {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.day-of-week {
+    font-size: 19px;
+    font-weight: 700;
+    height: 32px;
+}
+
+.day-of-month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    width: 55px;
+    height: 55px;
+}
+
+li.active .day-of-month {
+    border-radius: 50%;
+    background: #ff2d2d;
+    color: white;
+}
+
+/* MONTH_PICKER */
+
+.month-picker {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 41px;
+}
+
+.month-picker span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+.back__arrow {
+    background: url(/public/right-arrow.svg);
+    transform: rotate(180deg);
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+}
+
+.month-picker button {
+    width: calc(100%/7);
+    height: 100%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.arrow {
+    /* margin: 0 5px; */
+    position: absolute;
+    top: 30%;
+    background: none;
+    border-top: 3px solid #ff2d2d;
+    border-left: 3px solid #ff2d2d;
+    display: inline-block;
+    padding: 7px;
+}
+  
+.right {
+    right: 50%;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.left {
+    left: 50%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+@media (max-width: 414px) { 
+    .day-of-month {
+        font-size: 22px;
+        width: 45px;
+        height: 45px;
+    }
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Pontano+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style-type: none;
+}
